@@ -1,0 +1,9 @@
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - 1_HELLO_NEPAL.md
+  - 2_ADD_TWO_NUMBERS
+  - 3_ADD_TWO_USER_INPUT_NUMBERS.md
