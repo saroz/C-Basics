@@ -1,13 +1,14 @@
-plugins:
-  - jekyll-relative-links
+title: C Programming
 
+permalink: :slug
+
+plugins:
+  - jekyll-relative-links  
 relative_links:
   enabled: true
   collections: true
-
 collections:
   - navigation
-
 include:
   - 1_HELLO_NEPAL.md
   - 2_ADD_TWO_NUMBERS
