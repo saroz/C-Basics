@@ -1,3 +1,9 @@
+---
+title: Add Two User Input Numbers
+permalink: /add-two-user-input-numbers/
+layout: default
+---
+
 #### Write a Program to add two user input numbers:
 
 ``` c

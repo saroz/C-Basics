@@ -1,3 +1,10 @@
+---
+title: Add Two Numbers
+permalink: /add-two-numbers/
+layout: default
+---
+
+
 #### Write a Program to add two numbers:
 
 ``` c
