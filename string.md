@@ -12,9 +12,11 @@ layout: default
 #include <stdio.h>
 void main()
 {
-    printf("hello Nepal");
+    // print string
+    printf("Hello Nepal");
 }
 
 ```
 
-Output: <br/>```Hello Nepal```
+### Output: <br/>
+Hello Nepal

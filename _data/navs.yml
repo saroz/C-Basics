@@ -6,3 +6,37 @@
 
 - name: Add Two User Input Numbers
   url: /add-two-user-input-numbers/ 
+
+- name: Print Integer
+  url: /integer-print/ 
+
+- name: Add Two Float Numbers
+  url: /add-two-float-numbers/
+
+- name: Add Two Float Numbers 2
+  url: /add-two-float-numbers-2/
+
+- name: Character Display
+  url: /character-display/
+
+- name: Compute Quotient and Reminder
+  url: /compute-quotient-remainder/
+
+- name: Compute Division
+  url: /compute-division/
+
+- name: Size of Operators
+  url: /size-of-operators/
+
+- name: Swap Numbers
+  url: /swap-numbers/
+
+- name: Check Odd or Even
+  url: /check-odd-even/
+
+- name: Vowel or Consonant
+  url: /check-vowel-consonant/
+
+- name: Large Number Among Three
+  url: /large-number-among-three/
+
