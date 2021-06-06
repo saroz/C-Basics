@@ -2,6 +2,7 @@
 *.d
 .DS_Store
 .jekyll-cache
+_site
 
 # Object files
 *.o
