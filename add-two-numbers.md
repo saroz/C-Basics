@@ -5,7 +5,7 @@ layout: default
 ---
 
 
-#### Write a Program to add two numbers:
+## Write a Program to add two numbers:
 
 ``` c
 // Program

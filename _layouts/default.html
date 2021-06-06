@@ -1,17 +1,22 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/css/style.css">
-  </head>
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
   <body>
-    <nav>
-        {%- include header.html -%}
-    </nav>
-    <h1>{{ page.title }}</h1>
-    <section>
-      {{ content }}
-    </section>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="grid grid-centered">
+        <div class="grid-cell with-9col">
+          {{ content }}
+        </div>
+        <div class="grid-cell with-3col">
+          {%- include aside.html -%}
+        </div>
+      </div>
+    </main>
   </body>
+
 </html>

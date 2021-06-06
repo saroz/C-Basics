@@ -1,10 +1,11 @@
 ---
 title: Add Two User Input Numbers
+class: /hola/
 permalink: /add-two-user-input-numbers/
 layout: default
 ---
 
-#### Write a Program to add two user input numbers:
+## Write a Program to add two user input numbers:
 
 ``` c
 // Program

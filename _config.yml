@@ -1,15 +1,24 @@
-title: C Programming
+name: // saroz
+title: The C Programming Language
+author:
+  name: Saroj Kumar Poddar
+  email: hello@evoytic.com
+url: saroz.github.io/c-programming
 
 permalink: :slug
 
 plugins:
-  - jekyll-relative-links  
+  - jekyll-relative-links
+
 relative_links:
   enabled: true
   collections: true
+
 collections:
-  - navigation
+  - navs
+sass:
+  sass_dir: _sass
 include:
-  - 1_HELLO_NEPAL.md
-  - 2_ADD_TWO_NUMBERS
-  - 3_ADD_TWO_USER_INPUT_NUMBERS.md
+  - string.md
+  - add-two-numbers.md
+  - add-two-user-input-numbers.md
