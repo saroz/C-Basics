@@ -3,8 +3,8 @@ title: The C Programming Language
 author:
   name: Saroj Kumar Poddar
   email: hello@evoytic.com
-baseurl: /c-programming
-url: saroz.github.io
+
+url: saroz.github.io/c-programming/
 
 permalink: :slug
 
