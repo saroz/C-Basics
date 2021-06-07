@@ -20,6 +20,4 @@ collections:
 sass:
   sass_dir: _sass
 include:
-  - string.md
-  - add-two-numbers.md
-  - add-two-user-input-numbers.md
+  - _pages

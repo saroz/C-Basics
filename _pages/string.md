@@ -4,7 +4,7 @@ permalink: /string/
 layout: default
 ---
 
-## Write a Program to display:
+## Print string *Hello Nepal*.
 
 ``` c
 // Program

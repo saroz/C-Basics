@@ -5,11 +5,10 @@ layout: default
 ---
 
 
-## Write a Program to add two numbers:
+## Add two pre defined numbers.
 
 ``` c
 // Program
-
 #include <stdio.h>
 void main()
 {
@@ -19,7 +18,6 @@ void main()
     // print sum of a & b
     printf("Then sum of two number is: %d", a + b);
 }
-
 ```
 
 ### Output: <br/>

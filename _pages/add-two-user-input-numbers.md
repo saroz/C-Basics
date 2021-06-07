@@ -5,11 +5,10 @@ permalink: /add-two-user-input-numbers/
 layout: default
 ---
 
-## Write a Program to add two user input numbers:
+## Program to add two user input numbers.
 
 ``` c
 // Program
-
 #include <stdio.h>
 void main()
 {
