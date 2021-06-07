@@ -40,3 +40,11 @@
 - name: Large Number Among Three
   url: /large-number-among-three/
 
+- name: Sum using Recursion
+  url: /sum-using-recursion/
+
+- name: Number Factorial - Recursion
+  url: /factorial-using-recursion/
+
+- name: Fibonacci Series
+  url: /fibonacci-series/

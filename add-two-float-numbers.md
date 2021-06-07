@@ -4,7 +4,7 @@ permalink: /add-two-float-numbers/
 layout: default
 ---
 
-## Write a Program to add two flot numbers.
+## Write a Program to add two float numbers.
 
 ``` c
 // Program
