@@ -1,10 +1,10 @@
 ---
-title: Add Two Float Numbers 2
-permalink: /add-two-float-numbers-2/
+title: Add Two Float Numbers Custom
+permalink: /add-two-flot-numbers-custom/
 layout: default
 ---
 
-## Write a Program to add two flot numbers.
+## Write a Program to add two float numbers which restrict only have 3 value after decimal.
 
 ``` c
 // Program

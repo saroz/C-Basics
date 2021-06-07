@@ -1,50 +1,65 @@
-- name: Print String
-  url: /string/
+  - name: Print String
+    url: /string/
 
-- name: Add Two Numbers
-  url: /add-two-numbers/
+  - name: Add Two Numbers
+    url: /add-two-numbers/
 
-- name: Add Two User Input Numbers
-  url: /add-two-user-input-numbers/ 
+  - name: Add Two User Input Numbers
+    url: /add-two-user-input-numbers/
 
-- name: Print Integer
-  url: /integer-print/ 
+  - name: Print Integer
+    url: /integer-print/
 
-- name: Add Two Float Numbers
-  url: /add-two-float-numbers/
+  - name: Add Two Float Numbers
+    url: /add-two-float-numbers/
 
-- name: Add Two Float Numbers 2
-  url: /add-two-float-numbers-2/
+  - name: Add Two Float Numbers Custom
+    url: /add-two-flot-numbers-custom/
 
-- name: Character Display
-  url: /character-display/
+  - name: Character Display
+    url: /character-display/
 
-- name: Compute Quotient and Reminder
-  url: /compute-quotient-remainder/
+  - name: Compute Quotient and Reminder
+    url: /compute-quotient-remainder/
 
-- name: Compute Division
-  url: /compute-division/
+  - name: Compute Division
+    url: /compute-division/
 
-- name: Size of Operators
-  url: /size-of-operators/
+  - name: Size of Operators
+    url: /size-of-operators/
 
-- name: Swap Numbers
-  url: /swap-numbers/
+  - name: Swap Numbers
+    url: /swap-numbers/
 
-- name: Check Odd or Even
-  url: /check-odd-even/
+  - name: Check Odd or Even
+    url: /check-odd-even/
 
-- name: Vowel or Consonant
-  url: /check-vowel-consonant/
+  - name: Vowel or Consonant
+    url: /check-vowel-consonant/
 
-- name: Large Number Among Three
-  url: /large-number-among-three/
+  - name: Large Number Among Three
+    url: /large-number-among-three/
 
-- name: Sum using Recursion
-  url: /sum-using-recursion/
+  - name: Divide By
+    url: /divide-by/
 
-- name: Number Factorial - Recursion
-  url: /factorial-using-recursion/
+  - name: Divide by User Input Number
+    url: /divide-by-input-number/
 
-# - name: Fibonacci Series
-#   url: /fibonacci-series/
+  - name: Loop
+    url: /#/
+    
+  - name: Function
+    url: /#/
+
+  - name: Recursion
+    url: /#/
+    subnavs :
+      - name: Sum using Recursion
+        url: /sum-using-recursion/
+
+      - name: Number Factorial - Recursion
+        url: /factorial-using-recursion/
+
+      - name: Fibonacci Series
+        url: /fibonacci-series/

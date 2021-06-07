@@ -1,10 +1,17 @@
 <nav class="header-nav scrollappear appear appeared">
-    <ul class="header-links">
+    <ul class="navbar">
     {% for nav in site.data.navs %}
-        <li {% if nav.url == page.url %} class="active"{% endif %}>
-            <a href="{{site.baseurl}}{{ nav.url }}">
-                {{ nav.name }}
-            </a>
+        <li class="nav-item{% if nav.url == page.url %} active{% endif %}{% if nav.subnavs.size > 0 %} expand{% endif %}">
+            {% if nav.subnavs.size > 0 %}
+                <a class="nav-link has-subnav">{{ nav.name }}</a>
+                <div class="nav-sub">
+                    {% for sub in nav.subnavs %}
+                    <a class="nav-link {% if sub.url == page.url %}active{% endif %}" href="{{site.baseurl}}{{ sub.url }}">{{ sub.name }}</a>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <a class="nav-link" href="{{site.baseurl}}{{ nav.url }}">{{ nav.name }}</a>
+            {% endif %}
         </li>
     {% endfor %}
     </ul>
