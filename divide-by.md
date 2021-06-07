@@ -4,7 +4,7 @@ permalink: /divide-by/
 layout: default
 ---
 
-## Write a Program to check odd or even.
+## Program to divide by pre-defined number.
 
 ``` c
 // Program

@@ -4,7 +4,7 @@ permalink: /check-odd-even/
 layout: default
 ---
 
-## Write a Program to check odd or even.
+## Program to check odd or even.
 
 ``` c
 // Program

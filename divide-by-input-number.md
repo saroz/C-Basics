@@ -4,7 +4,7 @@ permalink: /divide-by-input-number/
 layout: default
 ---
 
-## Write a Program to check odd or even.
+## Program to divide by user input number.
 
 ``` c
 // Program
