@@ -46,6 +46,10 @@
   - name: Divide by User Input Number
     url: /divide-by-input-number/
 
+  - name: Triangle is equilateral, isosceles or scalene
+    url: /triangle-equilateral-isosceles-scalene/
+
+
   - name: Loop
     url: /#/
     
@@ -63,3 +67,9 @@
 
       - name: Fibonacci Series
         url: /fibonacci-series/
+
+  - name: Array
+    url: /#/
+    subnavs :
+      - name: 3D Array
+        url: /three-d-array/

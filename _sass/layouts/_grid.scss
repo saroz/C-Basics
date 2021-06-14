@@ -8,8 +8,8 @@
 // Create widths for each column.
 
 @mixin column-generator() {
-  @for $i from 1 through ($columns - 1) {
-    &.with-#{$i}col {
+  @for $i from 1 through ($columns) {
+    &.col-md-#{$i} {
       width: $one-column * $i;
     }
   }
@@ -19,7 +19,7 @@
 
 @mixin offset-generator() {
   @for $i from 1 through ($columns - 1) {
-    &.with-#{$i}off {
+    &.md-#{$i}-off {
       margin-left: $one-column * $i;
     }
   }
@@ -29,11 +29,11 @@
 // Reset offsets to a margin-left of 0.
 
 @mixin responsive-grid-generator() {
-  @for $i from 1 through ($columns - 1) {
-    &.with-#{$i}col {
-      width: 100%;
+  @for $i from 1 through ($columns) {
+    &.col-sm-#{$i} {
+      width: $one-column * $i;
     }
-    &.with-#{$i}off {
+    &.sm-#{$i}-off {
       margin-left: 0;
     }
   }
@@ -41,19 +41,9 @@
 
 // Component
 // =============================================================================
-.page-content {
-  padding: 4rem 0 6rem;
-}
-
-h2 {
-  padding-bottom: .625rem;
-}
-.highlighter-rouge {
-  margin-bottom: 3rem;
-}
-
 .grid {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0 $negative-gutter;
   font-size: 0;
@@ -67,31 +57,37 @@ h2 {
 // cell needs to span. Do not use 'with-[x]col` if you wish to span the entire
 // width.
 
+.ml-auto {
+  margin-left: auto;
+}
+
+
+
 .grid-cell {
   @include column-generator();
   @include offset-generator();
-  display: inline-block;
+  display: block;
   width: 100%;
   padding: 0 $gutter;
-  margin: 0;
   font-size: $base-font-size;
-  text-align: left;
-  vertical-align: top;
+
+  &.col {
+    width: auto;
+  }
+
   &.is-centered {
     text-align: center;
   }
+
   &.is-right {
     text-align: right;
   }
+
   &.is-top {
     vertical-align: top;
   }
-  &.is-middle {
-    vertical-align: middle;
-  }
-  &.is-bottom {
-    vertical-align: bottom;
-  }
+
+
 }
 
 // Centers your grid container with a max-width.
@@ -106,6 +102,9 @@ h2 {
 // =============================================================================
 
 @include breakpoint(small) {
+  .grid-reverse-mobile {
+    flex-direction: column-reverse;    
+  }
   .grid-cell {
     @include responsive-grid-generator();
   }

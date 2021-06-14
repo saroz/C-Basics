@@ -96,28 +96,59 @@
   }
 }
 
+.mobile-nav {
+  display: none;
+  background-color: $white;
+  border: 1px solid rgba($gray-lightest, 1);
+  color: $brand-primary;
+  font-weight: bold;
+  padding: 1rem;
+  margin-bottom: -1px;
+  position: relative;
+  z-index: 1081;
+  height: 3.75rem;
 
-@include breakpoint(extra-small) {
+  &::after {
+    content: '';
+    border-radius: 0;
+    background-color: transparent;
+    border-right: 2px solid $header-link-color;
+    border-bottom: 2px solid $header-link-color;
+    height: .625rem;
+    width: .625rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: rotate(45deg);
+    margin-top: -.3125rem;
+}
+
+}
+
+
+@include breakpoint(small) {
+  .mobile-nav {
+    display: block;    
+  }
+
   .header-nav {
-    text-align: center;
+    background-color: $white;
+    border: 1px solid rgba($gray-lightest, 1);
+    max-height: 25rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    box-shadow: rgba($gray-lightest, .6) 0 0 1rem;
+    margin-bottom: 2rem;
+    // width: calc(100% - 40px);
+    // position: absolute;
+    // z-index: 1080;
+    // top: 3.6875rem;
   }
-  .navbar {
-    display: block;
-    float: none;
-    text-align: center;
-    li {
-      margin: 0 10px;
-      &:last-child {
-        margin-right: 0;
+  .nav {
+    &-item {
+      &::before {
+        display: none;
       }
-    }
-  }
-  .header-tags {
-    margin: 20px 0 0;
-    text-align: center;
-
-    li {
-      padding: 0 5px;
     }
   }
 }

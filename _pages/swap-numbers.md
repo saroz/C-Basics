@@ -1,38 +1,67 @@
 ---
-title: Swap Numbers
-permalink: /swap-numbers/
+title: 3D Array
+permalink: /three-d-array/
 layout: default
 ---
 
-## Write a Program to swap numbers.
+## Print 3D Array
 
 ``` c
 // Program
+// Online C compiler to run C program online
 #include <stdio.h>
-void main()
-{
-    // define var
-    int num1, num2, temp;
+int main() {
+    int x[2][3][2];
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            for (int k = 0; k < 2; k++) {
+                printf("Enter values x[%d][%d][%d]: ", i, j, k);
+                scanf("%d", &x[i][j][k]);
+            }
+        }
+    }
+    printf("3D array: \n{\n");
+    for (int i = 0; i < 2; i++) {
+        printf("\t{");
+        for (int j = 0; j < 3; j++) {
+            if(j == 1 || j == 2 ) {
+                printf(",");
+            }
 
-    // ask user to enter numbers
-    printf("Enter a first number: ");
-    scanf("%d", &num1);
-
-    printf("Enter a second number: ");
-    scanf("%d", &num2);
-
-    temp = num1;
-    num1 = num2;
-    num2 = temp;
-
-    // print output
-    printf("After swapping, first number is: %d\n", num1);
-    printf("After swapping, second number is: %d", num2);
+            for (int k = 0; k < 2; k++) {
+                if(k == 0) {
+                    printf("{");
+                }
+                if(k == 1) {
+                    printf(",");
+                }
+                printf("%d", x[i][j][k] );
+                if(k == 1) {
+                    printf("}");
+                }
+            }
+        }
+        printf("}\n");
+    }
+    printf("\n}");
 }
 ```
 
 ### Output: <br/> 
-Enter a first number: 100 <br/>
-Enter a second number: 120 <br/>
-After swapping, first number is: 120<br/>
-After swapping, second number is: 100
+Enter values x[0][0][0]: 0 <br/>
+Enter values x[0][0][1]: 1 <br/>
+Enter values x[0][1][0]: 2 <br/>
+Enter values x[0][1][1]: 3 <br/>
+Enter values x[0][2][0]: 4 <br/>
+Enter values x[0][2][1]: 5 <br/>
+Enter values x[1][0][0]: 6 <br/>
+Enter values x[1][0][1]: 7 <br/>
+Enter values x[1][1][0]: 8 <br/>
+Enter values x[1][1][1]: 9 <br/>
+Enter values x[1][2][0]: 10 <br/>
+Enter values x[1][2][1]: 11 <br/>
+3D array: <br/>
+{ <br/>
+    &nbsp;&nbsp;&nbsp;{\{0,1},{2,3},{4,5}\}<br/>
+	&nbsp;&nbsp;&nbsp;{\{6,7},{8,9},{10,11}\}<br/>
+}
