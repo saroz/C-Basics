@@ -12,3 +12,9 @@ h2 {
 .highlighter-rouge {
   margin-bottom: 3rem;
 }
+
+@include breakpoint(small) {
+  .page-content {
+    padding-top: 0;
+  }
+}
